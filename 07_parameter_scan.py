@@ -229,7 +229,7 @@ print(
             "hardware_execution": False,
             "cloud_execution": False,
         },
-        # 固定键顺序，便于多次培训运行时比较输出。
+        # 固定键顺序，便于比较多次运行的输出。
         sort_keys=True,
     )
 )

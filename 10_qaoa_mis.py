@@ -48,7 +48,7 @@ def main() -> None:
     # 打印优化次数、能量、候选解、基线和报告结构。
     print(
         {
-            # 稳定名称用于培训日志识别。
+            # 稳定名称便于在日志中识别本次运行。
             "example": "qaoa_mis_workflow",
             # algorithm_kind 应为 qaoa。
             "algorithm": result.algorithm_kind,

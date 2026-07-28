@@ -79,14 +79,14 @@ def run_demo(
         seed=SEED,
         # Analog 和 Hybrid 路线按同一个目标约束执行。
         target=target,
-        # 用较小时间步数控制培训 Demo 的运行时间。
+        # 用较小时间步数控制 Demo 的运行时间。
         analog_time_steps=8,
         # 固定时间戳，避免报告哈希随运行时间变化。
         created_at="2026-07-25T00:00:00+00:00",
     )
     # Analog 和 Hybrid 路线使用相同的数值积分配置。
     analog_options = SimulationOptions(
-        # complex64 可降低小规模培训示例的内存和运行时间。
+        # complex64 可减少这个小规模示例的内存占用和运行时间。
         dtype="complex64",
         # 使用固定步长 Krylov 积分器，保证离线确定性。
         integrator="fixed_step_krylov",

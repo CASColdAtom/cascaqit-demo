@@ -182,7 +182,7 @@ def main(output: Path = DEFAULT_REPORT) -> None:
 
 
 def _cli_output_path() -> Path:
-    """读取 --output，同时忽略外层培训运行器可能附加的参数。"""
+    """读取 --output，同时忽略外层运行环境可能附加的参数。"""
     # 创建只包含本脚本参数的解析器。
     parser = ArgumentParser()
     # --output 可覆盖默认 HTML 报告位置。

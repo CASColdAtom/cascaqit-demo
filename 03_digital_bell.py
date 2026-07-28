@@ -25,9 +25,9 @@ def main() -> None:
 
     # 在本地模拟器中执行线路，并返回采样次数和概率分布。
     result = circuit.run(
-        # 16 shots 足够用于培训演示，同时运行速度很快。
+        # 16 shots 足以观察采样结果，同时运行速度较快。
         shots=16,
-        # 固定随机种子，使每次培训得到相同采样结果。
+        # 固定随机种子，使每次运行得到相同采样结果。
         seed=3102,
         # 同时计算 probabilities，便于对照 counts 和理论分布。
         return_probabilities=True,

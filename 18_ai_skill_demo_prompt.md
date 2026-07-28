@@ -1,4 +1,4 @@
-# CASCAQit AI Coding Skill 培训演示
+# CASCAQit AI Coding Skill Demo
 
 ## 准备
 

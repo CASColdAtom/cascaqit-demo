@@ -50,10 +50,10 @@ def main() -> None:
     # 使用固定随机种子的本地 AHS 模拟器执行离散化程序并采样 16 次。
     result = LocalAhsSimulator(target=target, seed=3101).run(discretized, shots=16)
 
-    # 只打印培训中需要立即核对的字段，完整对象仍保留在 result 中。
+    # 只打印需要立即核对的字段，完整对象仍保留在 result 中。
     print(
         {
-            # 示例名称便于从多段培训日志中识别这次输出。
+            # 示例名称便于从多段日志中识别这次输出。
             "example": "learning_analog_first_run",
             # 从离散化后的 ProgramIR 读取真实程序类型。
             "program_type": discretized.program_ir.program_type,

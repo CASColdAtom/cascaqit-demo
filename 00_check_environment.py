@@ -1,4 +1,4 @@
-"""打印培训环境中的 CASCAQit 版本和四类公开编程入口。"""
+"""打印 CASCAQit 版本和四类公开编程入口。"""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ def main() -> None:
                 "hybrid_entry": HybridProgram.__name__,
                 # Problem API 用 GraphProblemIR 表达图优化问题。
                 "problem_entry": GraphProblemIR.__name__,
-                # 培训中的所有执行都交给本地 LocalBackend。
+                # 示例中的所有执行都交给本地 LocalBackend。
                 "local_backend": LocalBackend.__name__,
             },
             # 保留中文字符，避免 JSON 输出为 Unicode 转义序列。

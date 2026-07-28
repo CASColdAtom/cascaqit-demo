@@ -72,7 +72,7 @@ scan_result = scan_job.result()
 
 # 输出单点任务和扫描任务的关键状态、哈希、counts 与执行范围。
 print(
-    # JSON 结构便于学员逐层查看顶层任务和 scan 子结果。
+    # JSON 结构便于逐层查看顶层任务和 scan 子结果。
     json.dumps(
         {
             # 顶层字段描述单点 Hybrid 任务。

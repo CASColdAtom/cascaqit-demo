@@ -9,9 +9,9 @@ DEFAULT_SKILL_DIR="${SCRIPT_DIR}/../../coding-skills/CASCAQit-Skills/skills/casc
 # 默认使用 CASCAQit-Jupyter 已验收环境中的 Python，确保 SDK 版本一致。
 DEFAULT_PYTHON="${SCRIPT_DIR}/../../coding-skills/CASCAQit-Jupyter/artifacts/install-env/bin/python"
 
-# 第一个可选参数允许讲师覆盖 Skill 目录。
+# 第一个可选参数允许调用者指定 Skill 目录。
 SKILL_DIR="${1:-${DEFAULT_SKILL_DIR}}"
-# 第二个可选参数允许讲师覆盖 Python 解释器。
+# 第二个可选参数允许调用者指定 Python 解释器。
 PYTHON_BIN="${2:-${DEFAULT_PYTHON}}"
 
 # 第一步说明即将检查 Python、SDK 版本和兼容范围。

@@ -81,7 +81,7 @@ def _example_validation_error() -> ProgramValidationError:
     """创建一条有完整定位和修复建议的执行前目标校验错误。"""
     # ProgramValidationError 同时保留人类可读消息和机器可读字段。
     return ProgramValidationError(
-        # message 给讲师和开发者直接阅读。
+        # message 可直接提供给开发者或使用者阅读。
         "Atom spacing is below target minimum.",
         # code 是稳定的程序化错误标识。
         code="ATOM_SPACING_TOO_SMALL",

@@ -46,7 +46,7 @@ def main() -> None:
         # JSON 输出便于自动测试逐字段比较。
         json.dumps(
             {
-                # 示例名称用于区分培训日志中的不同脚本。
+                # 示例名称用于区分不同脚本的日志。
                 "example": "digital_circuit_ergonomics",
                 # 绑定完成后参数列表应为空或只保留已解析参数信息。
                 "parameter_names": [item.name for item in bound.parameters],
@@ -72,7 +72,7 @@ def main() -> None:
                 "network_accessed": False,
                 "credentials_loaded": False,
             },
-            # 固定键顺序，便于培训材料和测试比较输出。
+            # 固定键顺序，便于记录结果或编写测试。
             sort_keys=True,
         )
     )
